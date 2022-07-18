@@ -1,3 +1,32 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 #logoAP{
     width: 150px;
+}
+img {
+    width: 50px;
+}
+.redes{
+    margin-right: 0.9em;
+}
+.btn{
+    border-width: medium;
+}
+
+/*---Vista de Celular---*/
+@media (max-width: 575px){
+    .container{
+        flex-direction: column;
+    }
+    .redes{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .redes img{
+        margin: 0.5em;
+    }
 }
