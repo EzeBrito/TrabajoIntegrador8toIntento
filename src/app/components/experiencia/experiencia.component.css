@@ -2,8 +2,24 @@
     padding: 20px;
 }
 div{
-    background-color: aqua;
+    background-color: rgb(47, 219, 219);
 }
 h1,h3{
     display: inline;
+}
+
+
+/*Estilo de fotitoexperiencia*/
+
+@media (min-width: 992px){
+    #fotitoexperiencia{
+        width: 50px;
+        margin: 1.2em;    
+    }
+}
+
+@media (max-width: 991px){
+    #fotitoexperiencia{
+        width: 0px
+    }
 }
