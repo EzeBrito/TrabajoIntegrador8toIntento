@@ -7,3 +7,18 @@ div{
 h1,h3{
     display: inline;
 }
+
+/*Estilo de fotitoeducacion*/
+
+@media (min-width: 992px){
+    #fotitoeducacion{
+        width: 50px;
+        margin: 0.8em;    
+    }
+}
+
+@media (max-width: 991px){
+    #fotitoeducacion{
+        width: 0px
+    }
+}
