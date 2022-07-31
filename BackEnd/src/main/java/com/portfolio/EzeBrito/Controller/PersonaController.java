@@ -1,6 +1,7 @@
 package com.portfolio.EzeBrito.Controller;
 
-import com.portfolio.EzeBrito.Entry.Persona;
+
+import com.portfolio.EzeBrito.Entity.Persona;
 import com.portfolio.EzeBrito.Interface.IPersonaService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,8 +20,8 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = "http://localhost:4200")
 public class PersonaController {
     @Autowired IPersonaService ipersonaService;
-    
-    @GetMapping("/personas/traer")
+     
+    @GetMapping("personas/traer")
     public List<Persona> getPersona() {
         return ipersonaService.getPersona();
     }
@@ -55,9 +56,9 @@ public class PersonaController {
         return persona;
     }
     
-    @GetMapping("/personas/traer/perfil")
+    @GetMapping("personas/traer/perfil")
     public Persona findPersona(){
-        return ipersonaService.findPersona((long)5);
+        return ipersonaService.findPersona((long)8);
     }
     
     

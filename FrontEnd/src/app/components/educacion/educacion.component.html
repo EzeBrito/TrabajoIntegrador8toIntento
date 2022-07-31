@@ -1,22 +1,26 @@
 <div class="row">
-    <h2><u>EDUCACIÓN ACADÉMICA</u></h2>
-    <div class="col-lg-1">
-        <img src="../../../assets/2APLogo.png" id="fotitoeducacion">
-        <img src="../../../assets/ubalogo.png" id="fotitoeducacion">
-        <img src="../../../assets/santalogo.png" id="fotitoeducacion">
+    <h2><u>EDUCACION ACADEMICA</u></h2>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">+Formacion Academica</button>
     </div>
-    <div class="col-lg-11">
-        <ul>
-            <li><h4>FULL STACK DEVELOPED JR. * (2022)</h4> </li>
-                <p><b>Tecnicatura</b> / Argentina Programa </p>
-        </ul>
-        <ul>
-            <li><h4>LICENCIADO EN ECONOMÍA * (2020)</h4> </li>
-                <p><b>Universidad</b> / Universidad de Buenos Aires</p>
-        </ul>
-        <ul>
-            <li><h4>Bachiller: Economía y Gestión de las Organizaciones * (2001-2004)</h4> </li>
-            <p><b>Secundaria</b> / Instituto Parroquial Santa María</p>
-        </ul>
+
+    <div class="col lg 1"></div>
+    <div class="col-lg-12">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td><h4>{{Educacion.nombreE}}</h4></td>
+                    <td><h3>{{Educacion.descripcionE}}</h3></td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-secondary" routerLink="/editedu/{{Educacion.id}}"><i class="bi bi-pen-fill"></i></button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Educacion.id)"><i class="bi bi-x-circle-fill"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
+
 </div>
+

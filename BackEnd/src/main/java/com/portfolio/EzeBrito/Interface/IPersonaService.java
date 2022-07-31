@@ -1,6 +1,7 @@
 package com.portfolio.EzeBrito.Interface;
 
-import com.portfolio.EzeBrito.Entry.Persona;
+
+import com.portfolio.EzeBrito.Entity.Persona;
 import java.util.List;
 
 

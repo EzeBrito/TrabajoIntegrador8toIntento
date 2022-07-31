@@ -17,7 +17,7 @@ public class LoginUsuario {
     private String password;
     
     //Getter & Setter
-        public String getNombreUsuario() {
+    public String getNombreUsuario() {
         return nombreUsuario;
     }
 

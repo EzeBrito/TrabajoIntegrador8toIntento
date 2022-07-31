@@ -9,5 +9,5 @@ package com.portfolio.EzeBrito.Security.Enums;
  * @author HP8730
  */
 public enum RolNombre {
-ROLE_ADMIN, ROLE_USER
+    ROLE_ADMIN, ROLE_USER
 }
