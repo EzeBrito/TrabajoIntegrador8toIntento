@@ -1,6 +1,7 @@
 package com.portfolio.EzeBrito.Service;
 
-import com.portfolio.EzeBrito.Entry.Persona;
+
+import com.portfolio.EzeBrito.Entity.Persona;
 import com.portfolio.EzeBrito.Interface.IPersonaService;
 import com.portfolio.EzeBrito.Repository.IPersonaRepository;
 import java.util.List;
